@@ -55,9 +55,11 @@ _italicized text_
 
 `<p>This is a paragraph</p>`
 
-[This is a link](https://www.example.com "text on hover")
+This is [a link](https://www.example.com "text on hover")
 
 <https://www.markdownguide.org>
+
+Here's a sentence with a footnote. [^1]
 
 ![Markdown Logo](https://markdown-here.com/img/icon256.png)
 
@@ -99,8 +101,6 @@ _italicized text_
 }
 ```
 
-### My Great Heading {#custom-id}
-
 <!-- task list -->
 
 * [x] Write the press release
@@ -112,7 +112,5 @@ For better readability you can also use normal texts with [links][1] written in 
 [1]: https://somelink.org "Some link"
 
 <!-- Footnote -->
-
-Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
