@@ -1,12 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title Text</title>
+    <meta name="author" content="Abhijeet Saxena">
+    <meta name="description" content="This cheatsheet collates most of the basic HTML tags and can be used by both beginners and advance developers as a refresher.">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <title>
+        HTML Cheatsheet
+    </title>
 </head>
+
 <body>
-    
+    <h1 id="jump" class="heading">HTML Cheatsheet</h1>
+
+    <h2 class="indicate">Typography</h2>
+    <!-- Heading tags -->
+    <h1 id="jump">Main heading... Largest</h1>
+    <h2>subheadings</h2>
+    <h3>Heading 3... Getting</h3>
+    <h4>Heading 4... Smaller</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6... Smallest</h6>
+
+    <!-- In HTML, each paragraph has to be wrapped in a <p> element -->
+    <p>I am a paragraph, oh yes I am.</p>
+    <!-- superscript & subscript -->
+    <p>Using
+        <sup>Superscript</sup> and
+        <sub>Subscript</sub> is fun</p>
+    <!-- stylings -->
+    <p>This is
+        <em>emphasized</em>
+        and this is
+        <strong>strong</strong>.</p>
+
+    <!-- blockquotes -->
+    <blockquote cite="https://twitter.com/CodeWisdom/status/917508470567505926">
+        Software undergoes beta testing shortly before it’s released. Beta is Latin for “still doesn’t work”.
+    </blockquote>
+    <q>This is an inline quote</q>
+
+    <h2 class="indicate">Computer Code</h2>
+    <!-- represent computer code -->
+    <pre><code>{
+                this.text = "this represents computer code";
+                console.log('This preserves the white spaces');
+                }</code></pre>
+
+    <p>You can also use
+        <var>var tag</var> to represent an element.</p>
+
+    <p>Select all the text with
+        <kbd>Cmd</kbd> +
+        <kbd>A</kbd>.</p>
+
+    <pre>$ <kbd> We use samp tag to show the</kbd>
+                <samp>console output</samp></pre>
+
+    <!-- abbreviations -->
+    <p>Hover on
+        <abbr title="This is an abbreviation">ABB</abbr> for tool tip</p>
+
+    <!-- Standard simple date -->
+    <time datetime="2016-01-20">20 January 2016</time>
+
+    <!-- images -->
+    <h2 class="indicate">Images</h2>
+    <img src="assets/images/loveHTMLS.jpg" alt="If image doesn't exist show this text" width="400" height="341" title="Title text">
+
+    <!-- figure with captions -->
+    <figure>
+        <img src="assets/images/loveHTML.jpg" alt="We can't live without HTML" width="400" height="341">
+        <figcaption>This is above image's caption</figcaption>
+    </figure>
+
+    <p>An SVG:</p>
+    <svg version="1.1" baseProfile="full" width="300" height="200">
+        <rect width="100%" height="100%" fill="black" />
+        <circle cx="150" cy="100" r="90" fill="blue" />
+    </svg>
+
+
+    <!-- Lists -->
+    <h2 class="indicate">Lists</h2>
+    <!-- unordered -->
+    <ul>
+        <li>Unordered Lists</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <!-- ordered -->
+    <ol>
+        <li>Ordered Lists</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+    <!-- nested lists -->
+    <ol>
+        <li>This Represents</li>
+        <li>a Nested List</li>
+        <ul>
+            <li>Nested Item 1</li>
+            <li>Nested Item 2</li>
+        </ul>
+        </li>
+    </ol>
+    <!-- description list -->
+    <dl>
+        <dt>This is a Description List</dt>
+        <dd>It automatically formats the list with some extra indentations</dd>
+    </dl>
+
+
+    <!-- tables -->
+    <h2 class="indicate">Tables</h2>
+    <table>
+        <caption>This is optional table caption</caption>
+        <tr>
+            <th>These</th>
+            <th>are</th>
+            <th>table</th>
+            <th>Headers</th>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td>row</td>
+            <td>table </td>
+            <td>cells</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>row</td>
+            <td>table</td>
+            <td> cells</td>
+        </tr>
+    </table>
+
+
+    <!-- links -->
+    <h2 class="indicate">Links</h2>
+    <p>I'm creating a link to the
+        <a href="https://www.mozilla.org/en-US/"> Mozilla homepage</a>.
+    </p>
+
+    <p>This link opens in a
+        <a href="https://www.mozilla.org/en-US/" target="_blank">new tab</a>.
+    </p>
+
+    <!-- link to reference of another element -->
+    <p>Jump to
+        <a href="#jump">Top of page</a>
+    </p>
+    <!-- email link -->
+    <p>
+        <a href="mailto:saxenaabhijeet@outlook.com">Send email to me</a>
+    </p>
+    <p>
+        <a href="mailto:saxenaabhijeet@outlook.com?cc=someCC@address.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+            Send mail</a> with cc, subject and body using Query Params.
+    </p>
+
+    <!-- forms -->
+    <h2 class="indicate">Forms</h2>
+    <form action="/my-handling-form-page" method="post">
+
+        <div>
+            <label for="name">Normal Input:</label>
+            <input type="text" id="name" name="user_name">   </div>
+        <div>
+            <label for="mail">Masked Input: </label>
+            <input type="password" id="pwd" name="pwd">   </div>
+        <div>
+            <label for="mail">Numbered Input: </label>
+            <input type="number" name="age" id="age" min="1" max="1000000" step="2">
+        </div>
+        <div>
+            <label for="mail">Date Time: </label>
+            <input type="datetime-local" name="datetime" id="datetime">
+        </div>
+        <div>
+            <label for="mail">File Upload: </label>
+            <input type="file" name="file" id="file" accept="image/*" multiple>
+        </div>
+
+        <div>
+            Dropdown Input:
+            <select id="groups" name="groups">
+                <optgroup label="fruits">
+                    <option>Choice 1</option>
+                    <option>Choice 2</option>
+                    <option>Choice 3</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="card">
+                <span>Select Multi:</span>
+            </label>
+            <br>
+            <select multiple id="multi" name="multi">
+                <option>Choice 1</option>
+                <option>Choice 2</option>
+            </select>
+        </div>
+        <div>
+            <label for="myFruit">Autocomplete list: </label>
+            <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+            <datalist id="mySuggestion">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Blackberry</option>
+                <option>Blueberry</option>
+                <option>Lemon</option>
+                <option>Lychee</option>
+                <option>Peach</option>
+                <option>Pear</option>
+            </datalist>
+        </div>
+        <div>
+            Radio buttons:
+            <label for="soup">Ooption 1</label>
+            <input type="radio" checked id="soup" name="meal" value="soup">
+            <label for="curry">Option 2</label>
+            <input type="radio" id="curry" name="meal" value="curry">
+        </div>
+        <div>
+            Check boxes:
+            <label for="soup">Option 1</label>
+            <input type="checkbox" id="soup" name="meal" value="soup">
+            <label for="curry">Option 2</label>
+            <input type="checkbox" id="curry" name="meal" value="curry">
+        </div>
+        <div>Progress Bar:
+            <progress max="100" value="75">75/100</progress>
+            <br> Meter Bar:
+            <meter min="0" max="100" value="50" low="33" high="66" optimum="50">75</meter>
+        </div>
+
+        <div>Textarea:
+            <br>
+            <textarea cols="30" rows="10"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Submit Button</button>
+        </div>
+    </form>
+
+    <!-- Multimedia -->
+    <h2 class="indicate">Multimedia</h2>
+    <p>This is video content</p>
+    <video src="assets/sample.mp4" controls>
+        <p>Your browser doesn't support HTML5 video. Here is a
+            <a href="assets/sample.mp4">link to the video</a> instead.</p>
+    </video>
+    <p> This is audio content</p>
+    <audio controls>
+        <source src="assets/sample.mp3" type="audio/mp3">
+        <p>Your browser doesn't support HTML5 audio. Here is a
+            <a href="assets/sample.mp3">link to the audio</a> instead.</p>
+    </audio>
+    <p> Youtube Embed using iFrame tag</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Odum0r9gxA8" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
+
 </body>
+
 </html>

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-align: center;
+  background-color: #000;
+  color: #f4f4f4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.indicate {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+div {
+  margin: 5px 0px;
+}
+
+th,
+td {
+  border: solid black 1px;
+}
