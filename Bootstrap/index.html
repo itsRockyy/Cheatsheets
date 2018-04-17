@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cheatsheet</title>
+    <title>Bootstrap Cheatsheet</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+        div {
+            margin: 5px;
+        }
     </style>
 </head>
 
@@ -54,7 +59,8 @@
 
     <!-- jumbotron -->
     <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
+        <h1 class="display-4">
+            Hello, world!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or
             information.
         </p>
@@ -339,15 +345,19 @@
 
     <!-- progress bars -->
     <div class="progress col-md-6">
-        <div class="progress-bar" role="progressbar" style="width: %;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-    </div>
-    <div class="progress col-md-6">
         <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <div class="progress col-md-6">
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
             aria-valuemax="100" style="width: 75%"></div>
     </div>
+
+    <!-- widths -->
+    <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+    <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+    <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+    <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+    <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
 
     <!-- forms -->
     <form class="col-md-6">
@@ -393,18 +403,21 @@
                 <option>5</option>
             </select>
         </div>
-        <form>
-            <div class="form-group">
-                <label for="formControlRange">Example Range input</label>
-                <input type="range" class="form-control-range" id="formControlRange">
-            </div>
-        </form>
+        <div class="form-group">
+            <label for="formControlRange">Example Range input</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+        </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" cols="40" rows="3"></textarea>
         </div>
     </form>
 
+    <!-- shadows -->
+    <div class="shadow-none col-md-3 p-3 mb-5 bg-light rounded">No shadow</div>
+    <div class="shadow-sm col-md-3 p-3 mb-5 bg-white rounded">Small shadow</div>
+    <div class="shadow p-3 col-md-3 mb-5 bg-white rounded">Regular shadow</div>
+    <div class="shadow-lg col-md-3 p-3 mb-5 bg-white rounded">Larger shadow</div>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
