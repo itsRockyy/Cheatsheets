@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skeleton CSS Cheatsheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+        .columns,
+        .column {
+            background: #f4f4f4;
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Standard Headings -->
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <h3>Heading</h3>
+        <h4>Heading</h4>
+        <h5>Heading</h5>
+        <h6>Heading</h6>
+
+        <!-- Base type size -->
+        <p>The base type is 15px over 1.6 line height (24px)</p>
+
+        <!-- Other styled text tags -->
+        <strong>Bolded</strong>
+        <em>Italicized</em>
+        <a>Colored</a>
+        <u>Underlined</u>
+        <br>
+        <br>
+
+        <!-- Standard buttons -->
+        <a class="button" href="#">Anchor button</a>
+        <button>Button element</button>
+        <input type="submit" value="submit input">
+        <input type="button" value="button input">
+
+        <br>
+
+        <!-- Primary buttons -->
+        <a class="button button-primary" href="#">Anchor button</a>
+        <button class="button-primary">Button element</button>
+        <input class="button-primary" type="submit" value="submit input">
+        <input class="button-primary" type="button" value="button input">
+        <br>
+
+        <!-- FLOATING -->
+        <h2 class="u-pull-left">Left Float</h2>
+        <h2 class="u-pull-right">Right Float</h2>
+        <div class="u-cf"></div>
+
+        <ul>
+            <li>Item 1</li>
+            <li>
+                Item 2
+                <ol>
+                    <li>Item 2.1</li>
+                    <li>Item 2.2</li>
+                </ol>
+            </li>
+            <li>Item 3</li>
+        </ul>
+        <!-- The above form looks like this -->
+        <form>
+            <div class="row">
+                <div>
+                    <label for="exampleEmailInput">Your email</label>
+                    <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                </div>
+                <div>
+                    <label for="exampleRecipientInput">Reason for contacting</label>
+                    <select id="exampleRecipientInput">
+                        <option value="Option 1">Questions</option>
+                        <option value="Option 2">Admiration</option>
+                        <option value="Option 3">Can I get your number?</option>
+                    </select>
+                </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea placeholder="Hi Dave …" id="exampleMessage"></textarea>
+            <label class="example-send-yourself-copy">
+                <input type="checkbox">
+                <span class="label-body">Send a copy to yourself</span>
+            </label>
+            <input class="button-primary" type="submit" value="Submit">
+        </form>
+        <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+        <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+
+        <!-- code -->
+        <pre><code>.some-class {
+            background-color: red;
+          }</code></pre>
+        <br>
+        <!-- table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dave Gamache</td>
+                    <td>26</td>
+                    <td>Male</td>
+                    <td>San Francisco</td>
+                </tr>
+                <tr>
+                    <td>Dwayne Johnson</td>
+                    <td>42</td>
+                    <td>Male</td>
+                    <td>Hayward</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- GRID -->
+        <div class="row">
+            <div class="eight columns">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil ipsa dolor voluptatibus impedit nisi, sed quibusdam
+                illum delectus fuga quis! Sunt at minima amet delectus incidunt, quo vitae eos labore quasi non facilis similique
+                animi exercitationem optio doloremque sit?
+            </div>
+            <div class="four columns">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil ipsa dolor voluptatibus impedit nisi, sed quibusdam
+                illum delectus fuga quis! Sunt at minima amet delectus incidunt
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="six columns">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil ipsa dolor voluptatibus impedit nisi, sed quibusdam
+                illum delectus fuga quis! Sunt at minima amet delectus incidunt
+            </div>
+            <div class="six columns">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil ipsa dolor voluptatibus impedit nisi, sed quibusdam
+                illum delectus fuga quis! Sunt at minima amet delectus incidunt
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="one-third column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+            <div class="two-thirds column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="one-third column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+            <div class="one-third column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+            <div class="one-third column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, rerum.
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="one-half column">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolorem.
+            </div>
+            <div class="one-half column">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolorem.
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+
+</html>
