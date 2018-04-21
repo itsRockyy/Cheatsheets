@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Materialize CSS Cheatsheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav style="margin-bottom: 10px" id="top" class="green darken-4">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="padding-left:20px">
+                <i class="material-icons">cloud</i>Materialize CSS Cheatsheet</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active">
+                    <a href="#">Components</a>
+                </li>
+                <li>
+                    <a href="#">JavaScript</a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- dropdowns -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li>
+            <a href="#!">one</a>
+        </li>
+        <li>
+            <a href="#!">two</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="#!">three</a>
+        </li>
+    </ul>
+
+    <!-- typography -->
+    <div class="container">
+        <div class="card-panel">
+            <h1>Heading h1</h1>
+            <h2>Heading h2</h2>
+            <h3>Heading h3</h3>
+            <h4>Heading h4</h4>
+            <h5>Heading h5</h5>
+            <h6>Heading h6</h6>
+        </div>
+
+        <!-- search bar -->
+        <input id="search" type="search" required placeholder="       Search bar">
+
+        <!-- carousal -->
+        <div class="carousel">
+            <a class="carousel-item" href="#one!">
+                <img src="https://lorempixel.com/250/250/nature/1">
+            </a>
+            <a class="carousel-item" href="#two!">
+                <img src="https://lorempixel.com/250/250/nature/2">
+            </a>
+            <a class="carousel-item" href="#three!">
+                <img src="https://lorempixel.com/250/250/nature/3">
+            </a>
+            <a class="carousel-item" href="#four!">
+                <img src="https://lorempixel.com/250/250/nature/4">
+            </a>
+            <a class="carousel-item" href="#five!">
+                <img src="https://lorempixel.com/250/250/nature/5">
+            </a>
+        </div>
+
+        <blockquote>
+            This is an example quotation that uses the blockquote tag.
+        </blockquote>
+
+        <!-- flow-text -->
+        <div>
+            <a id="flow-toggle" class="btn waves-effect waves-light" onclick="toggleFlow()">Toggle flow-text</a>
+            <div id="flow-text-demo" class="card-panel">
+                <p class="flow-text-ex">
+                    One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page
+                    resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages,
+                    we've created a class that fluidly scales text size and line-height to optimize readability for the user.
+                    Line length stays between 45-80 characters and line height scales to be larger on smaller screens.</p>
+                <p class="flow-text-ex">To see Flow Text in action, slowly resize your browser and watch the size of this text body change! Use the
+                    button above to toggle off/on flow-text to see the difference!</p>
+            </div>
+        </div>
+
+
+        <!-- grid system -->
+        <div class="row">
+            <div class="col s12 brown lighten-3
+        ">This div is 12-columns wide on all screen sizes</div>
+            <div class="col s6 light-blue lighten-3">6-columns (one-half)</div>
+            <div class="col s6 pink lighten-4">6-columns (one-half)</div>
+        </div>
+
+        <!-- tables -->
+        <div class="row">
+            <div class="col">
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shannon</td>
+                            <td>KitKat</td>
+                            <td>$9.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- lightbox -->
+        <img class="materialboxed" width="650" src="http://lorempixel.com/400/200/">
+
+        <!-- list groups -->
+        <div class="row">
+            <div class="col l4 m4 s4">
+                <ul class="collection">
+                    <li class="collection-item active">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tooltips -->
+        <div class="row">
+            <a href="#!" class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-html="true" data-position="bottom" data-tooltip="I am tooltip">
+                Bottom</a>
+            <a href="#!" class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="top" data-tooltip="I am a tooltip"> Top</a>
+            <a href="#!" class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="left" data-tooltip="I am a tooltip"> Left</a>
+            <a href="#!" class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="right" data-tooltip="I am a tooltip"> Right</a>
+        </div>
+
+        <!-- scroll spy -->
+        <div class="row" style="border: solid lightgrey">
+            <div class="col s12 m9 l10">
+                <div id="introduction" class="section scrollspy">
+                    <p>Content </p>
+                </div>
+
+                <div id="structure" class="section scrollspy">
+                    <p>Content </p>
+                </div>
+
+                <div id="initialization" class="section scrollspy">
+                    <p>Content </p>
+                </div>
+            </div>
+            <div class="col hide-on-small-only m3 l2">
+                <ul class="section table-of-contents">
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#structure">Structure</a>
+                    </li>
+                    <li>
+                        <a href="#initialization">Intialization</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- modals && Toasts -->
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" style="margin: -15px 0px 10px 0px" href="#modal1">Modal</a>
+        <a onclick="M.toast({html: 'I am a toast'})" style="margin: -15px 0px 10px 0px" class="btn orange">Click to raise a Toast!</a>
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <!-- breadcrumb -->
+        <nav>
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="#!" style="margin-left: 10px" class="breadcrumb">These</a>
+                    <a href="#!" class="breadcrumb">Are</a>
+                    <a href="#!" class="breadcrumb">Breadcrumbs</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- pagination -->
+        <div class="row">
+            <ul class="pagination">
+                <li class="disabled">
+                    <a href="#!">
+                        <i class="material-icons">chevron_left</i>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#!">1</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">2</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">3</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">4</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">5</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">
+                        <i class="material-icons">chevron_right</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- badges & collapsible -->
+        <div class="row">
+            <div class="col s4 m4 l4">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">filter_drama</i>
+                            First
+                            <span class="new badge red">4</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">place</i>
+                            Second
+                            <span class="badge light-blue" style="color: white">1</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tap targets trigger -->
+        <div class="row">
+            <div class="col">
+                <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('open')">Open tap target</a>
+                <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('close')">Close tap target</a>
+                <!-- Element Showed -->
+                <a id="menu" class="waves-effect waves-light btn btn-floating" style="margin-left: 600px">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <!-- Tap Target Structure -->
+                <div class="tap-target blue" data-target="menu">
+                    <div class="tap-target-content">
+                        <h5>Title</h5>
+                        <p>A bunch of text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- You can use any color for any element -->
+        <div class="row">
+            <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
+            <div class="card-panel">
+                <span class="blue-text text-darken-2">This is a card panel with dark blue text</span>
+            </div>
+        </div>
+        <!-- this is the color pallette -->
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h3>Color Pallette</h3>
+            </div>
+            <div class="col s4 m4 l4">
+                <div class="grey lighten-5">
+                    <span>#fafafa grey lighten-5</span>
+                </div>
+                <div class="grey lighten-4">
+                    <span>#f5f5f5 grey lighten-4</span>
+                </div>
+                <div class="grey lighten-3">
+                    <span>#eeeeee grey lighten-3</span>
+                </div>
+                <div class="grey lighten-2">
+                    <span>#e0e0e0 grey lighten-2</span>
+                </div>
+                <div class="grey lighten-1">
+                    <span>#bdbdbd grey lighten-1</span>
+                </div>
+                <div class="grey">
+                    <span>#9e9e9e grey</span>
+                </div>
+                <div class="grey darken-1" style="color: rgba(255, 255, 255, 0.9);">
+                    <span>#757575 grey darken-1</span>
+                </div>
+                <div class="grey darken-2" style="color: rgba(255, 255, 255, 0.9);">
+                    <span>#616161 grey darken-2</span>
+                </div>
+                <div class="grey darken-3" style="color: rgba(255, 255, 255, 0.9);">
+                    <span>#424242 grey darken-3</span>
+                </div>
+                <div class="grey darken-4" style="color: rgba(255, 255, 255, 0.9);">
+                    <span>#212121 grey darken-4</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="row">
+            <a class="waves-effect waves-light btn-large">Large Button</a>
+            <a class="waves-effect waves-light btn-small">Small Button</a>
+            <a class="btn-flat disabled">Disbaled Button</a>
+        </div>
+
+        <div class="fixed-action-btn horizontal direction-top direction-left">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating red" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                        <i class="material-icons">insert_chart</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating yellow darken-1" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                        <i class="material-icons">format_quote</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating green" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                        <i class="material-icons">publish</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating blue" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);">
+                        <i class="material-icons">attach_file</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- progress bars -->
+        <div class="row">
+            <div class="progress">
+                <div class="determinate" style="width: 70%"></div>
+            </div>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- truncate long text -->
+        <div class="row">
+            <div class="card-panel">
+                <p class="truncate">This is an extremely long title that will be truncated. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Voluptatibus, corrupti asperiores. Eligendi, rerum sunt, blanditiis recusandae similique nisi quod
+                    minima eveniet at aliquid itaque sed. Nobis pariatur, porro atque nam fuga saepe dicta laudantium delectus
+                    unde qui fugiat illo dolore.</p>
+            </div>
+        </div>
+
+        <!-- hover effects -->
+        <div class="card-panel hoverable"> Hoverable Card Panel</div>
+
+        <!-- images -->
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="image.png" alt="" class="responsive-img">
+                            <!-- apply the "circle" class here -->
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                This is a square image. Add the "circle" class to it to make it appear circular.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- embeds -->
+        <div class="row">
+            <div class="video-container">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <a class="btn-floating btn-large cyan pulse">
+            <i class="material-icons">edit</i>
+        </a>
+        <span> Pulsating Buttons (should be used with Floating buttons only)</span>
+        <div class="row">
+            <div class="col s12 m2">
+                <p class="z-depth-1">z-depth-1</p>
+            </div>
+            <div class="col s12 m2">
+                <p class="z-depth-2">z-depth-2</p>
+            </div>
+            <div class="col s12 m2">
+                <p class="z-depth-3">z-depth-3</p>
+            </div>
+            <div class="col s12 m2">
+                <p class="z-depth-4">z-depth-4</p>
+            </div>
+            <div class="col s12 m2">
+                <p class="z-depth-5">z-depth-5</p>
+            </div>
+        </div>
+
+        <a id="scale-demo" href="#!" class="btn-floating btn-large scale-transition">
+            <i class="material-icons">add</i>
+        </a>
+        <a id="scale-demo-trigger" href="#!" class="btn right" onclick="toggle()">Toggle Scale</a>
+
+
+        <!-- forms -->
+        <div class="row" style="margin-top: 15px">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="range-field col l6">
+                        <input type="range" id="test5" min="0" max="100" />
+                    </p>
+
+                    <p class="col l12">
+
+                        <label>
+                            <input name="group3" type="radio" />
+                            <span>Radio</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Checkbox</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" checked="checked" />
+                            <span>Checked</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="filled-in" checked="checked" />
+                            <span>Filled in</span>
+                        </label>
+                        <label>
+                            <input id="indeterminate-checkbox" type="checkbox" />
+                            <span>Indeterminate</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" checked="checked" disabled="disabled" />
+                            <span>Disabled</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>File</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" class="datepicker" placeholder "This is a Datepicker">
+                    </div>
+                    <div class="chip col s2">
+                        This is a chip tag
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l4 s4 m4">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Select</label>
+                    </div>
+                </div>
+                <!-- Switch -->
+                <div class="switch">
+                    <label>
+                        Off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        On
+                    </label>
+                </div>
+
+                <!-- Disabled Switch -->
+                <div class="switch">
+                    <label>
+                        Off
+                        <input disabled type="checkbox">
+                        <span class="lever"></span>
+                        On
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer purple darken-5" style="margin-top: 10px">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Footer Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Text By Rocky
+                <a class="grey-text text-lighten-4 right" href="#top">Go to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- used for toggle functionallity -->
+    <script>
+        M.AutoInit(); //You can use this to automatically initialize
+        // or use jQuery for initializing
+        // $(document).ready(function () {
+        //     $(".dropdown-trigger").dropdown();
+        //     $('.collapsible').collapsible();
+        //     $('.tap-target').tapTarget();
+        //     $('.datepicker').datepicker();
+        //     $('select').formSelect();
+
+        //     var elem = document.querySelector('.fixed-action-btn');
+        //     var instance = M.FloatingActionButton.init(elem, {
+        //         direction: 'left'
+        //     });
+        // })
+
+        // custom functions        
+        function toggle() {
+            var elem = document.getElementById('scale-demo');
+            if (!elem.classList.contains('scale-out'))
+                elem.classList.add('scale-out');
+            else
+                elem.classList.remove('scale-out');
+        }
+        function toggleFlow() {
+            var elem = document.querySelectorAll('.flow-text-ex');
+            for (var i = 0; i < elem.length; i++) {
+                if (!elem[i].classList.contains('flow-text'))
+                    elem[i].classList.add('flow-text');
+                else
+                    elem[i].classList.remove('flow-text');
+            }
+        }
+    </script>
+</body>
+
+</html>
