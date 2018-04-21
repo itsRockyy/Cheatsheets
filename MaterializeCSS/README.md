@@ -1,16 +1,19 @@
-# Bootstrap Cheatsheet
+# materializecss Cheatsheet
 
-> ## A quick reference to Bootstrap properties.
+> ## A quick reference to materializecss properties.
 
-Are you working on a Bootstrap website? Do you have to memorize the Bootstrap classes? Are you wasting a lot of the time to search for Bootstrap classes?
+materializecss is a modern responsive front-end framework based on Material Design.
 
-Forget all this… This Bootstrap Cheat Sheet contain all the classes to perform each kind of function. These work as quick reference guides for the developers. As it is difficult to memorize syntax of all the classes and related code.
-This should be really helpful in drafting your website.
+### So, what is Material design ?
 
-All the popular bootstrap style have been used in `index.html`.
+Created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
+
+There are tons of cool Components and Javascript elements you can use but since its not possible to cover all, this cheatsheet will allow you to easily start using Materialize in your website.
+
+All the popular style have been used in `index.html`.
 You may open the raw file to view the comments that describe each property.
 
-#### References: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+#### References: http://materializecss.com/getting-started.html
 
 Made with ️❤︎ by **[Rocky](https://rocky93.github.io/ "Abhijeet Saxena")**
 
